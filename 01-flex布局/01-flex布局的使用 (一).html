@@ -75,7 +75,18 @@
             */
 
             /* align-content: flex-start; */
-            flex-wrap: wrap;
+            /* flex-wrap: wrap; */
+
+            /*
+            8 flex-basis 用了设置flex items 在main axis方向上的base size
+            auto 默认值、具体的宽度数值(100PX)
+            
+            决定flex items最终base size的因素，从优先级高到低
+            max-width\max-height\min-width\min-height
+            flex-basis
+            width\height
+            内容本身的size
+            */
         }
         .item {
             width: 100px;
