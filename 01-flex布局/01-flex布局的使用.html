@@ -10,14 +10,14 @@
             background-color: #f00;
             margin: 0 auto;
             /*
-            开启flex布局 
+            1 开启flex布局 
             flex:块级元素
             inline-flex:行内元素
             */
             display:flex;
 
-            /*flex-direction 决定主轴的方向*/
             /*
+            2 flex-direction 决定主轴的方向
             row:默认值 主轴从左到右
             row-reverse：主轴从右到左
             column: 主轴从上到下
@@ -28,7 +28,7 @@
             /* flex-direction: column-reverse; */
 
             /*
-            justify-content 决定了flex item在主轴上的对齐方式
+            3 justify-content 决定了flex item在主轴上的对齐方式
             flex-start: 默认值 与main start对齐
             flex-end: 与main end对齐
             center：居中对齐
@@ -37,6 +37,17 @@
             space-around: flex items 之间距离相等 flex items与main start、main end之间距离是flex items之间距离一半
             */
             justify-content: space-around;
+
+            /*
+            4 align-items 决定了flex items在交叉轴上的对齐方式
+            normal: 在弹性布局中，效果和stretch一样
+            stretch: 当flex items在交叉轴方向的size为auto时，会自动拉伸至填充flex container
+            flex-start:与cross start对齐
+            flex-end:与cross end 对齐
+            center:居中对齐
+            baseline:与基准线对齐
+            */
+            /* align-items: flex-end; */
         }
         .item {
             width: 100px;
@@ -47,6 +58,7 @@
         }
         .item1 {
             background-color: aqua;
+            /* height: 100px; */
         }
         .item2 {
             background-color: blueviolet;
