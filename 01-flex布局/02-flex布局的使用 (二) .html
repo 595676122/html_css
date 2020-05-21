@@ -9,30 +9,79 @@
             height: 400px;
             background-color: #f00;
             margin: 0 auto;
-            /*
-            1 开启flex布局 
-            flex:块级元素
-            inline-flex:行内元素
-            */
             display:flex;
 
-        }
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+        }  
         .item {
-            width: 100px;
+            width: 200px;
             height: 100px;
             color: #fff;
             text-align: center;
             line-height: 100px;
+
+            /*
+            1 order 决定了flex items的排布顺序
+            可以设置任意整数(正整数、负整数、0)，值越小就排越前面
+            默认值是0
+            */
+
+            /*
+            2 align-self flex-items可以通过align-self覆盖flex container 设置的align-items
+            auto 默认,遵从flex container的align items设置
+            stretch、flex-start、flex-end、center、baseline 效果和align-items一致
+            */
+
+            /*
+            3 flex-grow 决定flex items如何扩展
+            可以设置任意非负数，默认值 0
+            当flex container在main axis方向上有剩余size时，flex-grow属性才会生效
+
+            当所有的flex-items的flex-grow总和超过1，每个flex item扩展的size为
+            flex container的剩余size * flex-grow / sum
+
+            当所有的flex-items的flex-grow总和不超过1，每个flex item扩展的size为
+            flex container的剩余size * flex-grow
+
+            flex items扩展后的size不能超过max-width\max-height
+            */
+
+            /*
+            4 flex-shrink 决定flex items如何收缩
+            可以设置任意非负数，默认值 0
+            当flex container在main axis方向上超过size时，flex-shrink属性才会生效
+
+            如果所有的flex items 的flex-shrink总和超过1，每个flex item收缩的size为 
+            flex items 超过 flex container的 size * 收缩比例 / flex items 的收缩比例之和
+
+            如果所有的flex items的flex-shrink总和sum不超过1,每个flex item 收缩的size为
+            flex items 超过 flex container的size * sum * 收缩比例 / flex items 的收缩比例之和
+            收缩比例 =  flex-shrink * flex item 的base size
+            base size 就是 flex item放入 flex container 之前的size
+
+            flex items 收缩后的最终size不能小于 min-width\min-height
+            */
         }
         .item1 {
             background-color: aqua;
             /* height: 100px; */
+            /* flex-grow: 0.1; */
+            flex-shrink: .2;
         }
         .item2 {
             background-color: blueviolet;
+            /* order: -1; */
+            height: 150px;
+            /* flex-grow: 0.2;
+            max-width: 110px; */
+            flex-shrink: .2;
         }
         .item3 {
             background-color: coral;
+            /* align-self: flex-start; */
+            /* flex-grow: 0.3; */
+            flex-shrink: .1;
         }
     </style>
 </head>
