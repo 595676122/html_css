@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [title] {
+            color: #f00;
+        }
+        [title="div元素"] {
+            font-size: 25px;
+        }
+        [title*="one"] {
+            /* background-color: #00f; */
+        }
+        [title^="p"] {
+            /* background-color: #00f; */
+        }
+        [title$="one"] {
+            background-color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <div title="div元素">我是div元素</div>
+    <p title="p元素">我是p元素</p>
+    <p title="p one">我是p元素</p>
+    <p>我也是p元素</p>
+    <span title="span元素">我是span元素</span>
+</body>
+</html>

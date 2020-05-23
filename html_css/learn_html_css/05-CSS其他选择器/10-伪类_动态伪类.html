@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:active {
+            color: blueviolet;
+        }
+
+        /*hover active应用到其他元素上*/
+        strong:hover {
+            font-size: 30px;
+        }
+        strong:active {
+            font-size: 50px;
+        }
+        input:focus {
+            color: red;
+        }
+        a:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">百度</a>
+
+    <!--hover/active-->
+    <strong>我是strong元素</strong>
+
+    <input type="text" value="啊啊啊">
+</body>
+</html>

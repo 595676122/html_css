@@ -1,0 +1,141 @@
+## CSS
+
+### 1. css 的引入方式
+
+- 内联样式
+
+- 文档样式
+- 外部样式
+
+### 2. css文件编码和import引入
+
+- 在css文件中使用@charset指定文件编码,一般都是UTF-8
+
+- 在css文件中使用@import  url(./base.css)方式引入其他样式表,@import的效率比link元素效率低
+
+### 3. 统配选择器的使用
+
+- 所有元素
+- 一般用来给所有元素作一些通用性的设置
+- 比如内边距、外边距
+- 效率比较 低，尽量不用
+
+### 4. 元素选择器、class选择器、id选择器
+
+1. 元素选择器
+2. class选择器
+3. id选择器
+
+### 5. 常用的css属性
+
+- color: 前景色(文字颜色)
+- font-size:文字大小
+- background-color:背景色
+- width:宽度
+- height:高度
+
+### 6. font
+
+- font是一个缩写属性
+- font-style font-variant font-weight font-size/line-height font-family
+
+div {
+
+​	font: italic small-caps 700 20px/40px "宋体";
+
+}
+
+- [ ] font-style、font-variant、font-weight顺序可以调换，也可以省略
+- [ ] /line-height可以省略,如果不省略,必须跟在font-size后面
+- [ ] font-size、font-family不可以调换顺序，不可以省略
+
+
+
+### 7. 属性选择器
+
+..
+
+### 8. 后代选择器 子选择器 兄弟选择器
+
+- div span
+
+div 下面直接和间接子元素
+
+- div>span
+
+div 下面的直接子元素,不包括间接子元素 (> 前后可以有空格)
+
+- div+p
+
+div后面紧挨着的p元素(div、p必须是兄弟关系)
+
+- div~p
+
+div后面的p元素(div、p元素必须是兄弟关系)
+
+### 9. 交集选择器 并集选择器
+
+- div.one
+
+同时符合2个条件的元素: div元素 class值有one
+
+- div.one[title="test"]
+
+所有同时符合3个条件的元素: div元素、class值有one、title属性值等于test
+
+- div, .one, [title="test"]
+
+所有的div元素 + 所有class值有one的元素 + 所有title属性值等于test的元素
+
+### 10. 伪类
+
+1. #### 分类
+
+   1. 动态伪类
+
+      :link :visited :hover :active :focus
+
+   2. 目标伪类
+
+      :target
+
+   3. 语言伪类
+
+      :lang()
+
+   4. 元素状态伪类
+
+      :enabled :disabled :checked
+
+   5. 结构伪类
+
+      :nth-child()、:nth-last-child()、:nth-of-type()、:nth-last-of-type()、
+
+      :first-child、:last-child、:first-of-type、:last-of-type
+
+      :root、:only-child、:only-of-type、:empty
+
+   6. 否定伪类
+
+      :not()
+
+   7. 
+
+2. #### 动态伪类
+
+   a:link 未访问的链接
+
+   a:visited 已访问的链接
+
+   a:hover 鼠标挪动到链接上
+
+   a:active 激活的链接()
+
+   :hover必须放在:link和:viested后面才能完全生效
+
+   :active必须放在:hover后面才能完全生效
+
+   :focus 指当前拥有输入焦点的元素
+
+3. 
+
