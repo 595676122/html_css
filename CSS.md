@@ -137,5 +137,11 @@ div后面的p元素(div、p元素必须是兄弟关系)
 
    :focus 指当前拥有输入焦点的元素
 
-3. 
+3. #### 结构伪类
+
+   - :nth-child(1) :nth-child(n) :nth-child(2n) :nth-child-child(2n+1) :nth-child(even) :nth-child(odd) n是自然数, 是父元素中的第几个元素
+   - :nth-last-child 倒着数
+   - 
+
+4. 
 
