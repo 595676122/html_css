@@ -145,3 +145,11 @@ div后面的p元素(div、p元素必须是兄弟关系)
 
 4. 
 
+### 伪元素
+
+常用的伪元素
+
+- :first-line ::first-line
+- :first-letter ::first-letter
+- :before ::before
+- :after ::after
