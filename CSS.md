@@ -145,7 +145,7 @@ div后面的p元素(div、p元素必须是兄弟关系)
 
 4. 
 
-### 伪元素
+### 11. 伪元素
 
 常用的伪元素
 
@@ -153,3 +153,48 @@ div后面的p元素(div、p元素必须是兄弟关系)
 - :first-letter ::first-letter
 - :before ::before
 - :after ::after
+
+### 12. CSS优先级
+
+!important (10000)> 内联样式 (1000)> id选择器 (100)> 类选择器、属性选择器、伪类 (10)> 元素选择器、伪元素 (1)> 通配符 (0)
+
+### 13. 列表元素
+
+- ol 
+
+  有序元素列表，直接子元素是li
+
+- ul
+
+  无序元素列表，直接子元素是li
+
+- dt dl dd
+
+  定义列表，直接子元素是dl dd
+
+- 列表的css属性
+
+  - list-style-type
+
+    设置li元素前面的标记样式
+
+    通常设置为none，同时设置margin:0,padding:0
+
+  - list-style-image
+
+    设置某张图片为li元素前面的标记，会覆盖list-style-type的设置
+
+  - list-style-position
+
+    设置li元素前面标记的位置，可以去outside、inside2个值
+
+  - list-style 
+
+    type、image、position的缩写属性
+
+  他们都可以继承，所以设置为ol、ul元素，默认也会应用到li元素
+
+### 13. 表格
+
+border-collapse 设置 collapse 边框合并
+
