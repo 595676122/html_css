@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pager ul li {
+            display: inline-block;
+            text-align: center;
+            font-size: 14px;
+        }
+        .pager ul li:first-child a,.pager ul li:last-child a{
+            width: 60px;
+        }
+        .pager ul li a {
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            line-height: 34px;
+            border: 1px solid rgb(241, 220, 220);
+        }
+        .pager ul li a:hover {
+            background-color: rgb(226, 245, 253);
+        }
+        .pager ul li .active {
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            border: none;
+            color: black;
+            font-weight: 700;
+        }
+        .pager a.active:hover {
+            background-color: transparent;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="pager">
+        <ul>
+            <li><a href="#lt">&lt;上一页</a></li>
+            <li><a href="#1">1</a></li>
+            <li><a href="#2">2</a></li>
+            <li><a class="active" href="#3">3</a></li>
+            <li><a href="#4">4</a></li>
+            <li><a href="#5">5</a></li>
+            <li><a href="#6">6</a></li>
+            <li><a href="#gt">下一页&gt;</a></li>
+        </ul>
+    </div>
+</body>
+</html>

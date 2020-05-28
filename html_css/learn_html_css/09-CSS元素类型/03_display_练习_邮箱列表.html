@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .mail {
+            margin: 0 auto;
+            width: 100px;
+            border: 2px solid #999;
+           
+            text-align: center;
+            
+        }
+        .mail:hover>ul {
+            display: block;
+        }
+        .header {
+            font-weight: 700;
+            color: #fff;
+            background-color: #999;
+        }
+        
+        .email-list {
+            display: none;
+        }
+        .email-list li a:hover {
+            background-color: skyblue;
+            /* cursor: pointer; */
+        }
+        .email-list li a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="mail">
+        <div class="header">邮箱</div>
+        <ul class="email-list">
+            <li><a href="#">126</a></li>
+            <li><a href="#">qq</a></li>
+            <li><a href="#">163</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
