@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(51,51,51);
+        }
+        img {
+            vertical-align: middle;
+        }
+        .box {
+            width: 1024px;
+            margin: 0 auto;
+            background-color: #f00;
+        }
+
+        .product {
+            position: relative;
+        }
+        .label {
+            position: absolute;
+            /* bottom: 50px; */
+            left: 20px;
+        }
+        .product :nth-child(2){
+            bottom: 100px;
+        }
+        .product :nth-child(3){
+            bottom: 50px;
+        }
+
+        .label ul li{
+            display: inline-block;
+            
+        }
+       
+        .label .label-item {
+            display: inline-block;
+            /* margin: 0 auto; */
+            margin-left:10px;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 40px 40px 40px 40px;
+            border: 1px solid rgb(238,238,238);
+            background-color: #fff;
+            text-align: center;
+            font-size: 14px;
+            color: rgb(51,51,51);
+        }
+
+        .label .label-item a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="product">
+            <a href="#">
+                <img src="../img/12-08-kl_product.jpg" alt="">
+            </a>
+            <div class="label">
+                <ul>
+                    <li>
+                        <span class="label-item"><a href="#">精致护肤</a></span>
+                    </li>
+                    <li>
+                        <span class="label-item"><a href="#">人气面膜</a></span>
+                    </li>
+                    <li>
+                        <span class="label-item"><a href="#">大牌彩妆</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="label">
+                <ul>
+                    <li>
+                        <span class="label-item"><a href="#">防晒修护</a></span>
+                    </li>
+                    <li>
+                        <span class="label-item"><a href="#">迷人香氛</a></span>
+                    </li>
+                    <li>
+                        <span class="label-item"><a href="#">面部精华</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

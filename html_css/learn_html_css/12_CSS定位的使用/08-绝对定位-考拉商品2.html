@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(51,51,51);
+        }
+        img {
+            vertical-align: middle;
+        }
+        .box {
+            width: 1024px;
+            margin: 0 auto;
+            background-color: #f00;
+        }
+
+        .product {
+            position: relative;
+            display: inline-block;
+        }
+
+        .product ul {
+            text-align: justify;
+            text-align-last: justify;
+            position: absolute;
+            bottom: 20px;
+            width: 285px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+        .product ul li {
+            display: inline-block;
+            /* background-color: #fff; */
+        }
+        .product ul li a {
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #eaeaea;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #fff;
+            text-align-last: center;
+            margin-top: 10px;
+        }
+        .product ul li a:hover{
+            color: red;
+            /* background-color: #fff; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="product">
+            <a href="#">
+                <img src="../img/12-08-kl_product.jpg" alt="">
+            </a>
+            <ul>
+                <li><a href="#">精致护肤</a></li>
+                <li><a href="#">人气面膜</a></li>
+                <li><a href="#">大牌彩妆</a></li>
+                <li><a href="#">防晒修护</a></li>
+                <li><a href="#">迷人香氛</a></li>
+                <li><a href="#">面部精华</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

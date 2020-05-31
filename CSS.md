@@ -198,3 +198,66 @@ div后面的p元素(div、p元素必须是兄弟关系)
 
 border-collapse 设置 collapse 边框合并
 
+### 14. margin
+
+##### 上下margin传递
+
+- margin-top传递
+
+  如果块级元素的顶部线和父元素的顶部线重叠，那么这个块级元素的margin-top值会传递给父元素
+
+- magin-bottom传递
+
+  如果块级元素的底部线和父元素的底部线重叠，并且父元素的高度是auto，那么这个块级元素的margin-bottom值会传递给父元素
+
+- 如何防止出现传递问题
+
+  - 给父元素设置padding-top\padding-bottom
+
+  - 给父元素设置border
+
+  - 触发BFC：设置overflow为auto/hidden
+
+  - 如何触发BFC（BFC可以理解为一个结界）
+
+    - 浮动可以触发
+
+    - 设置一个元素的overflow为非visible
+
+      auto hidden scorll
+
+- 建议
+
+  - margin一般是用来设置兄弟元素之间的间距
+
+  - padding一般是用来设置父子元素之间的间距
+
+##### 上下margin折叠
+
+- 垂直方向上相邻的2个margin（margin-top、margin-bottom）有可能会合并为1个margin，这种现象叫做collapse（折叠）
+- 水平方向上的margin（margin-left、margin-right）永远不会collapse
+- 折叠后最终值的计算规则
+  - 两个值进行比较，取较大的值
+- 如何防止margin collapse
+  - 只设置其中一个元素的margin
+
+### 15. 定位
+
+##### 15.1 position
+
+###### 利用position可以对元素进行定位,常用取值有4个
+
+- static：静态定位
+- relative：相对定位
+- absolute：绝对定位(判断父元素是否是非static定位，否则一直向上查找父元素)
+- flexd：固定定位（直接相对于浏览器视口定位）
+
+###### 脱标元素的特点
+
+脱离标准流的元素:position: fixed/absolute,float
+
+-  可以随意设置宽高
+- 宽高默认由内容决定
+- 不再受标准流的约束
+- 不再给父元素汇报宽高数据
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .box {
+            width: 200px;
+            margin: 0 auto;
+            /* background-color: #f00; */
+            position: relative;
+        }
+        .code {
+            font-size: 12px;
+        }
+        .code {
+            position: absolute;
+            padding: 5px 5px ;
+            border: 1px solid #eaeaea;
+            top: 36px;
+            /* left:-64px; */
+            transform: translate(-40%);
+            display: none;
+        }
+
+        .box>span {
+            text-align: center;
+            /* display: inline-block; */
+            /* margin: 0 auto; */
+        } 
+        .box>span:hover+.code {
+            display: block;
+        }
+
+        .code img {
+            display: block;
+            
+        }
+        .code a img,.code a span {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span>手机考拉</span>
+        <div class="code">
+            
+            <a href="#">
+                <img src="https://kaola-haitao.oss.kaolacdn.com/314dd8b1-a77c-4897-bb9e-5237b9200b65T2001192035_180_180.png" alt="">
+                <span>下载APP</span>
+                <span>领1000元新人礼包</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
