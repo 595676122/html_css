@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+
+            position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+        }
+        .header {
+            height: 50px;
+            /* background-color: #f00; */
+        }
+        .header-content {
+            position: fixed;
+            top: 0;
+            height: 50px;
+            left: 0;
+            right: 0;
+            background-color: rgb(214, 224, 233);
+        }
+
+        .content {
+            /* background-color: #0f0; */
+            min-height: 100px;
+            flex-grow: 1;
+            display: flex;
+        }
+        .content-box {
+            display: flex;
+            flex-grow: 1;
+            
+        }
+
+        .aside {
+            width: 150px;
+            background-color: rgb(245, 190, 9);
+
+            overflow: auto;
+            padding: 10px 0 10px 10px;
+        }
+        .main {
+            flex-grow: 1;
+            overflow: auto;
+            /* padding: 10px 0 10px 10px; */
+            display: flex;
+        }
+        .main-content {
+            /* height: 1024px; */
+            /* background-color: rgb(219, 164, 192); */
+            flex-grow: 1;
+            flex-direction: column;
+            display: flex;
+        }
+        .nav {
+            background-color: rgb(68, 66, 66);
+            height: 30px;
+        }
+        .section {
+            overflow: auto;
+            flex-grow: 1;
+            /*  */
+        }
+        .section-content {
+            height: 900px;
+            margin: 10px;
+            background-color: rgb(129, 133, 127);
+        }
+
+        .footer {
+            height: 20px;
+        }
+        .footer-content {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(206, 247, 140);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">
+            <div class="header-content">
+                header
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-box">
+                <div class="aside">a</div>
+                <div class="main">
+                    <div class="main-content">
+                        <div class="nav">a</div>
+                        <div class="section">
+                            <div class="section-content">aa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                footer
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
